@@ -1,4 +1,4 @@
-esource "libvirt_domain" "vm" {
+resource "libvirt_domain" "vm" {
   for_each = var.vm_roles
 
   name   = each.key
