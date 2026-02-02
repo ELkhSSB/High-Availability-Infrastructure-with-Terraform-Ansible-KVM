@@ -1,2 +1,36 @@
-# High-Availability-Infrastructure-with-Terraform-Ansible-KVM
-Ce projet met en place une infrastructure haute disponibilité basée sur KVM, automatisée avec Terraform pour le provisionnement et Ansible pour la configuration. Il vise à assurer la tolérance aux pannes, la continuité de service et la reproductibilité de l’infrastructure selon les bonnes pratiques DevOps et IaC.
+# High Availability Infrastructure with Terraform, Ansible & KVM
+
+## 📌 Description
+Ce projet implémente une infrastructure **haute disponibilité (HA)** en utilisant :
+
+- **Terraform** pour le provisionnement de l’infrastructure (IaC)
+- **Ansible** pour la configuration et l’orchestration
+- **KVM / Libvirt** pour la virtualisation
+
+La configuration des machines est entièrement gérée par **Ansible**, sans cloud-init.
+
+---
+
+## 🏗 Architecture
+- 1 Load Balancer
+- 2 Web Servers
+- Réseau privé KVM
+- Accès SSH automatisé
+
+---
+
+## ⚙️ Technologies utilisées
+- Terraform
+- Ansible
+- KVM / Libvirt
+- Linux (Ubuntu)
+
+---
+
+## 🚀 Déploiement
+
+### 1️⃣ Création des VM avec Terraform
+```bash
+cd terraform
+terraform init
+terraform apply
